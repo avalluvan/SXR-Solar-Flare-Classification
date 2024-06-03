@@ -18,7 +18,6 @@ Scientific computing libraries
 - `numpy`
 - `pandas`
 - `scipy`
-- [`SuryaDrishti`](https://github.com/DEVANSH-DVJ/SuryaDrishti)
 
 Visualization package
 - `matplotlib` 
@@ -28,6 +27,7 @@ Learning frameworks
 - `sklearn`
 
 Optional
+- [`SuryaDrishti`](https://github.com/DEVANSH-DVJ/SuryaDrishti)
 - `tqdm`
 
 --------
