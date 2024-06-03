@@ -18,10 +18,13 @@ Scientific computing libraries
 - `numpy`
 - `pandas`
 - `scipy`
+
 Visualization package
 - `matplotlib` 
+
 Learning frameworks
 - `tensorflow`
 - `sklearn`
+
 Optional
 - `tqdm`
