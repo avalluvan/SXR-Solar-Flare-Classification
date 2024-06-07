@@ -27,7 +27,6 @@ def exp_gaus_single(x, A, center, sigma, tau, m, c):
         yval = Aprime * np.exp(y1) * (1 + erf(y2)) + m*x + c
     except (RuntimeWarning, RuntimeError, FloatingPointError, SpecialFunctionError) as f:
         print(f)
-        print(y1, np.exp(y1), y2, erf(y2))
         return 'error'
 
     return yval
@@ -42,6 +41,7 @@ def sim_data(xdata, inputparams, noisefree=False):
 
     yval = exp_gaus_single(xdata, *inputparams) # Base curve
     if type(yval) == str:
+        print('yval returned error.')
         return 'error', 'error'
     ydata = np.random.poisson(lam=yval)     # Adding Poisson noise
     pnoise = np.sqrt(ydata)
